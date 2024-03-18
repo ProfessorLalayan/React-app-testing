@@ -1,8 +1,9 @@
 import React from 'react';
-import Counter from './components/Counter';
 import './Styles/App.css';
 import PostItem from './components/PostItem';
 import PostItem2 from './components/PostItem2';
+import styled from 'styled-components';
+
 
 import projectImage1 from './assets/img/project-1.jpg'; 
 import projectImage2 from './assets/img/project-2.jpg'; 
@@ -14,7 +15,20 @@ import avatar2 from './assets/img/avatar-2.jpg';
 import avatar3 from './assets/img/avatar-3.jpg'; 
 import avatar4 from './assets/img/avatar-4.jpg'; 
 
+const Portfolio = styled.span`
+display: inline-block;
+border: 1px solid #5c64cf;
+padding: 8px 20px;
+color: #5c64cf;
+-webkit-transform: rotate(-15deg);
+transform: rotate(-15deg);
+`
 
+const Portfolio2 = styled.span`
+font-size: 55px;
+margin: 0;
+color: #18171c;
+`
 
 function App() {
   return (
@@ -22,8 +36,8 @@ function App() {
       <section className="portfolio">
         <div className="section-heading">
           <div className="portfolio-title">
-            <h6><span>Portfolio</span></h6>
-            <h3><span>Latest Projects</span></h3>
+            <h6><Portfolio>Portfolio</Portfolio></h6>
+            <h3><Portfolio2>Latest Projects</Portfolio2></h3>
           </div>
         </div>
         <div className="post-container">
@@ -38,8 +52,8 @@ function App() {
       <section className="Testimonial">
         <div className="section-heading">
           <div className="portfolio-title">
-            <h6><span>Testimonial </span></h6>
-            <h3><span>Client&#x27;s Kind Word</span></h3>
+            <h6><Portfolio>Testimonial </Portfolio></h6>
+            <h3><Portfolio2>Client&#x27;s Kind Word</Portfolio2></h3>
           </div>
         </div>
         <div className="post2-container">

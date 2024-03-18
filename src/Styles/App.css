@@ -14,9 +14,7 @@
 }
 
 .section-heading h3 {
-  font-size: 55px;
-  margin: 0;
-  color: #18171c;
+
 }
 
 @media (max-width: 991px) {
@@ -43,12 +41,7 @@
 }
 
 .portfolio-title h6 span {
-  display: inline-block;
-  border: 1px solid #5c64cf;
-  padding: 8px 20px;
-  color: #5c64cf;
-  -webkit-transform: rotate(-15deg);
-  transform: rotate(-15deg);
+
 }
 
 .portfolio-item {
